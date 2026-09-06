@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Al-Imam Malik Academy — Qur'an &amp; Sunnah Education, Online</title>
-<meta name="description" content="Online Qur'an memorization, Tajweed, the 10 Qira'at and Arabic classes for all ages, worldwide. Free trial class, no obligation. Separate programs for brothers and sisters.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='9' fill='%2312301f'/%3E%3Cpath d='M28 8C20 10 15 17 15 25c0 9 7 16 16 16 4 0 7.5-1.4 10.2-3.7C38 40.5 32 44 25 44 13.4 44 4 34.6 4 23S13.4 2 25 2c1.4 0 2.7.1 4 .4C25.6 3.7 22 8.6 22 14.4c0 4 1.8 7.6 4.7 9.9' fill='none' stroke='%23e0bd6c' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta name="description" content="Online Qur'an memorization, Tajweed, the 10 Qira'at and Arabic classes for ages 4 and up, worldwide. Free trial class, no obligation. Separate programs for male and female students.">
 <meta property="og:title" content="Al-Imam Malik Academy — Qur'an &amp; Sunnah Education, Online">
 <meta property="og:description" content="Online Qur'an memorization, Tajweed, the 10 Qira'at and Arabic classes for all ages, worldwide. Free trial class, no obligation.">
 <meta property="og:type" content="website">
@@ -12,6 +13,21 @@
 <meta name="twitter:title" content="Al-Imam Malik Academy — Qur'an &amp; Sunnah Education, Online">
 <meta name="twitter:description" content="Online Qur'an memorization, Tajweed, the 10 Qira'at and Arabic classes for all ages, worldwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!--
+  GOOGLE ANALYTICS — to activate:
+  1. Go to analytics.google.com and create a free GA4 property for this site.
+  2. Copy your Measurement ID (looks like "G-XXXXXXXXXX").
+  3. Replace BOTH occurrences of G-XXXXXXXXXX below with your real ID.
+  Once that's done, every visit and every "How did you hear about us?" source will show up in your GA4 dashboard under Acquisition > Traffic acquisition.
+-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -302,6 +318,11 @@
     margin-bottom:14px;
   }
   .field:last-child{margin-bottom:0;}
+  .field-hint{
+    font-size:0.8rem;
+    color:rgba(10,32,21,0.6);
+    margin:-4px 0 8px;
+  }
   .field label{
     display:block;
     font-size:0.85rem;
@@ -342,6 +363,12 @@
   }
   .day-check input{width:auto;}
   .book-form button{cursor:pointer;margin-top:8px;}
+  .form-privacy{
+    font-size:0.8rem;
+    color:rgba(10,32,21,0.55);
+    margin:14px 0 0;
+    text-align:center;
+  }
   @media (max-width:560px){
     .day-grid{grid-template-columns:repeat(3,1fr);}
   }
@@ -352,45 +379,6 @@
     text-align:center;
     padding:34px 0;
     font-size:0.85rem;
-  }
-
-  /* ---------- TESTIMONIALS (ready for later) ---------- */
-  .testimonials-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:28px;
-  }
-  .testimonial-card{
-    background:rgba(255,255,255,0.5);
-    border:1px solid var(--line-dark);
-    padding:24px;
-    border-radius:2px;
-  }
-  .testimonial-card p.quote{
-    font-family:'Fraunces',serif;
-    font-style:italic;
-    font-size:1.05rem;
-    color:var(--charcoal);
-    margin:0 0 14px;
-    line-height:1.5;
-  }
-  .testimonial-card .attribution{
-    font-size:0.85rem;
-    color:#5a5a50;
-    font-weight:600;
-  }
-  .testimonial-video{
-    position:relative;
-    padding-bottom:56.25%;
-    height:0;
-    overflow:hidden;
-    border-radius:2px;
-  }
-  .testimonial-video iframe{
-    position:absolute;top:0;left:0;width:100%;height:100%;border:0;
-  }
-  @media (max-width:680px){
-    .testimonials-grid{grid-template-columns:1fr;}
   }
 
   @media (max-width:680px){
@@ -412,7 +400,7 @@
     <div class="kicker-ar">أكاديمية الإمام مالك</div>
     <div class="kicker-ar-sub">لتعليم القرآن الكريم والسنة النبوية</div>
     <h1>Qur'an and Sunnah education, wherever you are</h1>
-    <p class="lede">Live online classes in Qur'an memorization, Tajweed, the 10 Qira'at and Arabic — taught one-to-one by qualified teachers. Start with a free trial, no obligation.</p>
+    <p class="lede">Live online classes in Qur'an memorization, Tajweed, the 10 Qira'at and Arabic — taught one-to-one by qualified teachers, for ages 4 and up. Start with a free trial, no obligation.</p>
     <div class="cta-row">
       <a href="#book" class="btn btn-gold">Book your free trial</a>
       <a href="https://wa.me/message/BBL6T2UTFJONI1?src=qr" class="btn btn-outline">Ask a question on WhatsApp</a>
@@ -421,6 +409,7 @@
       <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg>Students worldwide</span>
       <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 4.5-9 4.5-9-4.5L12 3z"/><path d="M5 10v5c0 1.5 3 3 7 3s7-1.5 7-3v-5"/></svg>Certified teachers</span>
       <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12l5 5L20 6"/></svg>Free trial, no obligation</span>
+      <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c0-3.6 2.9-6.2 6.5-6.2s6.5 2.6 6.5 6.2"/></svg>Ages 4+</span>
     </div>
     <div class="regions">Now enrolling students internationally — online, from anywhere in the world.</div>
   </div>
@@ -431,6 +420,7 @@
     <div class="section-head">
       <div class="eyebrow">What we teach</div>
       <h2>A tailored path for every age, from first letters to full memorization.</h2>
+      <p style="margin-top:12px;color:#4a4a42;font-size:0.95rem;">Open to students aged 4 and up — from young beginners to adults.</p>
     </div>
     <div class="offer-list">
       <div class="offer-row">
@@ -487,42 +477,12 @@
     </div>
     <div class="why-grid">
       <div class="why-item"><span class="dot"></span><p><strong>Flexible scheduling</strong>Classes arranged around your time zone, wherever you are in the world.</p></div>
-      <div class="why-item"><span class="dot"></span><p><strong>Same-gender teachers</strong>Separate programs for brothers and sisters, each taught by a teacher of the same gender.</p></div>
+      <div class="why-item"><span class="dot"></span><p><strong>Same-gender teachers</strong>Separate programs for male and female students, each taught by a teacher of the same gender.</p></div>
       <div class="why-item"><span class="dot"></span><p><strong>Experienced, qualified teachers</strong>Every teacher is vetted for both knowledge and teaching ability.</p></div>
       <div class="why-item"><span class="dot"></span><p><strong>No obligation trial</strong>Try a full class before you commit to anything.</p></div>
     </div>
   </div>
 </section>
-
-<!--
-  TESTIMONIALS SECTION — ready to activate once you have real testimonials.
-  To turn this on: delete the "<!--" line above this comment block and the "-->" line below it,
-  then replace the example quotes/names with real ones (or ask me to do it).
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">What families say</div>
-      <h2>Real experiences from our students and their parents.</h2>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="quote">"Replace this with a real quote from a parent or student."</p>
-        <div class="attribution">— Name, Country</div>
-      </div>
-      <div class="testimonial-card">
-        <p class="quote">"Replace this with a real quote from a parent or student."</p>
-        <div class="attribution">— Name, Country</div>
-      </div>
-    </div>
-
-    <!-- For a video testimonial hosted on YouTube (unlisted), replace VIDEO_ID below: -->
-    <div class="testimonial-video" style="margin-top:28px;">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-    </div>
-  </div>
-</section>
--->
 
 <section class="cta-band" id="book">
   <div class="wrap">
@@ -532,10 +492,12 @@
       <input type="hidden" name="_subject" value="New Free Trial Booking - Al-Imam Malik Academy">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://salahshihaibi.github.io/alimammalikacademy/thankyou.html">
+      <input type="hidden" name="_autoresponse" value="As-salamu alaykum, and jazakum Allahu khairan for reaching out to Al-Imam Malik Academy. We have received your booking request, and in sha Allah a member of our team will contact you on WhatsApp within 24 hours to arrange your free trial class. May Allah make this a blessed step in your Qur'an journey. — Al-Imam Malik Academy">
 
       <div class="step-progress">
-        <span id="stepLabel">Step 1 of 6</span>
-        <div class="step-progress-bar"><div class="step-progress-fill" id="stepFill" style="width:16.66%;"></div></div>
+        <span id="stepLabel">Step 1 of 4</span>
+        <div class="step-progress-bar"><div class="step-progress-fill" id="stepFill" style="width:25%;"></div></div>
       </div>
 
       <div class="form-section" data-step="1">
@@ -545,21 +507,21 @@
         <div class="field"><label>WhatsApp number</label><input type="text" id="bf-whatsapp" name="WhatsApp number" required></div>
         <div class="field"><label>Email</label><input type="email" id="bf-email" name="Email" required></div>
         <div class="field"><label>Country</label><input type="text" id="bf-country" name="Country" required></div>
-        <div class="field"><label>Age</label><input type="text" id="bf-age" name="Age" required></div>
+        <div class="field"><label>Age</label><input type="text" id="bf-age" name="Age" required><div class="field-hint" style="margin:6px 0 0;">Minimum age 4.</div></div>
         <div class="field">
           <label>Gender</label>
           <select id="bf-gender" name="Gender" required>
             <option value="">Select...</option>
-            <option>Brother</option>
-            <option>Sister</option>
+            <option>Male</option>
+            <option>Female</option>
           </select>
         </div>
         <div class="step-nav"><button type="button" class="step-next" onclick="goStep(2)">Next</button></div>
       </div>
 
       <div class="form-section" data-step="2">
-        <div class="fs-title">Your level</div>
-        <div class="fs-title-ar">مستواك</div>
+        <div class="fs-title">Your level &amp; goals</div>
+        <div class="fs-title-ar">مستواك وهدفك</div>
         <div class="field">
           <label>Where are you now with reading Qur'an?</label>
           <select id="bf-quranlevel" name="Qur'an reading level" required>
@@ -580,10 +542,6 @@
             <option>Fluent</option>
           </select>
         </div>
-        <div class="step-nav"><button type="button" class="step-back" onclick="goStep(1)">Back</button><button type="button" class="step-next" onclick="goStep(3)">Next</button></div>
-      </div>
-
-      <div class="form-section" data-step="3">
         <div class="field">
           <label>What do you want to work on?</label>
           <select id="bf-goal" name="Learning goal" required>
@@ -618,12 +576,15 @@
             <option>No</option>
           </select>
         </div>
-        <div class="step-nav"><button type="button" class="step-back" onclick="goStep(2)">Back</button><button type="button" class="step-next" onclick="goStep(4)">Next</button></div>
+        <div class="step-nav"><button type="button" class="step-back" onclick="goStep(1)">Back</button><button type="button" class="step-next" onclick="goStep(3)">Next</button></div>
       </div>
 
-      <div class="form-section" data-step="4">
-        <div class="fs-title">Choose your plan</div>
+      <div class="form-section" data-step="3">
+        <div class="fs-title">Plan &amp; availability</div>
+        <div class="fs-title-ar">الخطة والمواعيد</div>
         <div class="field">
+          <label>Which plan interests you?</label>
+          <div class="field-hint">Prices in £ (GBP). This is just a preference — nothing is charged before your trial.</div>
           <select id="bf-plan" name="Chosen plan" required>
             <option value="">Select a plan...</option>
             <option>1 day/week — 4 lessons/month — £30</option>
@@ -632,15 +593,11 @@
             <option>4 days/week — 16 lessons/month — £75</option>
             <option>5 days/week — 20 lessons/month — £90</option>
             <option>6 days/week — 24 lessons/month — £100</option>
-            <option>Not sure yet — start with the free trial</option>
+            <option>Not sure yet — I'll decide after the trial</option>
           </select>
         </div>
-        <div class="step-nav"><button type="button" class="step-back" onclick="goStep(3)">Back</button><button type="button" class="step-next" onclick="goStep(5)">Next</button></div>
-      </div>
-
-      <div class="form-section" data-step="5">
-        <div class="fs-title">When are you free?</div>
         <div class="field">
+          <label>When are you free?</label>
           <div class="day-grid">
             <label class="day-check"><input type="checkbox" name="Days free" value="Mon">Mon</label>
             <label class="day-check"><input type="checkbox" name="Days free" value="Tue">Tue</label>
@@ -671,10 +628,11 @@
           <label>Please specify your time zone</label>
           <input type="text" id="bf-timezone-other" name="Other time zone specified" placeholder="e.g. GMT+3">
         </div>
-        <div class="step-nav"><button type="button" class="step-back" onclick="goStep(4)">Back</button><button type="button" class="step-next" onclick="goStep(6)">Next</button></div>
+        <div class="step-nav"><button type="button" class="step-back" onclick="goStep(2)">Back</button><button type="button" class="step-next" onclick="goStep(4)">Next</button></div>
       </div>
 
-      <div class="form-section" data-step="6">
+      <div class="form-section" data-step="4">
+        <div class="fs-title">Almost done</div>
         <div class="field">
           <label>How did you hear about us?</label>
           <select id="bf-source" name="Heard about us via" required>
@@ -689,18 +647,20 @@
           </select>
         </div>
         <div class="field"><label>Anything else we should know?</label><textarea id="bf-notes" name="Notes" placeholder="Optional notes"></textarea></div>
-        <div class="step-nav"><button type="button" class="step-back" onclick="goStep(5)">Back</button><button type="submit" class="step-submit">Send booking request</button></div>
+        <p class="form-privacy">Your details are used only to arrange your classes and are never shared with third parties. You can cancel your enrollment at any time — see our <a href="privacy-policy.html" style="color:inherit;text-decoration:underline;">Privacy Policy &amp; Terms</a>.</p>
+        <div class="step-nav"><button type="button" class="step-back" onclick="goStep(3)">Back</button><button type="submit" class="step-submit">Send booking request</button></div>
       </div>
     </form>
   </div>
 </section>
 
 <footer>
-  Al-Imam Malik Academy — Qur'an and Sunnah education, online.
+  Al-Imam Malik Academy — Qur'an and Sunnah education, online.<br>
+  <a href="privacy-policy.html" style="color:rgba(246,241,226,0.7);">Privacy Policy &amp; Terms</a>
 </footer>
 
 <script>
-  var totalSteps = 6;
+  var totalSteps = 4;
   var currentStep = 1;
 
   function showStep(step){
